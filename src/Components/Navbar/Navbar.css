@@ -1,0 +1,29 @@
+nav{
+  width: 100%;
+  /* background-color: #333; */
+  color: #fff; 
+  padding: 4px 0; /*added some padding for whole navbar*/
+/*nav bar fixed to the top 0 and 0 from left*/
+  position: fixed;
+  top:0;
+  left: 0;
+
+  display: flex; /*aligining inline*/
+  align-items: center; /*vertically center*/
+  justify-content: space-between; /* so that logo will be in left and links will be in right*/
+  z-index: 10; /*It overlaps all elements when you scroll */
+
+}
+.logo{
+    width: 180px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block; /*make inline*/
+    margin: 5px 20px;
+    font-size: 16px;
+}
+.dark-nav{
+  background-color: #061170;
+  transition: 0.5s;
+}

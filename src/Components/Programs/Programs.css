@@ -1,0 +1,50 @@
+.programs{
+ margin: 80px auto;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;   
+}
+.program{
+    flex-basis: 31%; 
+    /*for hover icon to set inside*/
+    position: relative;  
+}
+
+.program img{
+    width: 100%;
+    border-radius: 10px;
+}
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    /* to align correclty insdie parent(program)*/
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,15,152,0.3);
+    /*to make icon and desc center inside the box*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* to make icon and desc as one below one*/
+    flex-direction: column;
+    cursor: pointer;
+    color: #fff;
+    /* to make defaulty hidden*/
+    opacity: 0;
+    /*caption will be 70% below the program class*/
+    padding-top: 70%;
+    transition: 0.5s;
+}
+.caption img{
+    width: 60px;
+}
+
+.program:hover .caption{
+    opacity: 1;
+    /*when we hover the making padding to 0..which looks like it lifting up*/
+    padding-top: 0;
+  
+}

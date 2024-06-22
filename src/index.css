@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body{
+  background-color: #F5F5F5;
+}
+a{
+  text-decoration: none;
+  color: inherit; /* takes color from parent element*/
+  line-height: 1; /*Sets the text height to its natural height, without extra spacing.*/
+  cursor: pointer;
+}
+.container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.btn{
+  background-color: #fff;
+  color: #212121;
+  padding: 14px 25px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 30px;
+  /*to align text and arrow in a same line*/
+  display: inline-flex;
+  /*specified as inline-flex then it only takes width neccessary for its content. The container remains in the flow of inline content, allowing surrounding text to remain on the same lines*/
+  align-items: center;
+  justify-content: center;
+}
+.btn img{
+  width: 20px;
+  margin-left: 10px;
+}
+.btn.dark-btn{
+  background: #212EA0;
+  color: #fff;
 }

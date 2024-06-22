@@ -1,0 +1,30 @@
+.hero{
+    /* takes 100% width and 100 minimum height of viewport it will expand if content needs more space */
+    width: 100%;
+    min-height: 100vh; 
+    /* need dark layer over the image */
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8, 0, 58, 0.7)), url('../../assets/hero.png');
+/*for proper center alignment*/
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+   /* to make hero-tex center inside hero*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero-text{
+    text-align: center;
+    max-width: 800px; /* it can narrower when screen smaller*/
+}
+.hero-text h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.hero-text p{
+    max-width: 700px;
+    /*right and left margin auto*/
+    margin: 10px auto 20px; 
+    line-height: 1.4;
+}
