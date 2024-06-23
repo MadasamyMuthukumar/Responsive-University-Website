@@ -14,6 +14,10 @@ nav{
   z-index: 10; /*It overlaps all elements when you scroll */
 
 }
+/*in full screen menu icon will be hidden*/
+.menu-icon{
+  display: none;
+}
 .logo{
     width: 180px;
 }
@@ -26,4 +30,51 @@ nav ul li{
 .dark-nav{
   background-color: #061170;
   transition: 0.5s;
+}
+
+/* ***********Media queries **********/
+@media (max-width:1000px){
+.logo{
+  width: 140px;
+}
+/*reducing spacing between nav items to avoid breakig */
+nav ul li{
+  margin: 10px 15px;
+}
+}
+
+@media (max-width:840px){
+  /*making nav as side bar*/
+  nav{
+    padding: 15px 0;
+  }
+  nav ul{
+    /*making ul alone fixed at right side not logo*/
+    position: fixed;
+    top: 0;
+  
+    right: 0px;
+    /*use available full height*/
+    bottom: 0;
+    background:#061170;
+    z-index: -1;
+    width: 200px;
+    padding-top: 70px;
+    transition: 0.5s;
+  }
+  nav ul li{
+    /*vertically aligning items*/
+    display: block;
+    margin: 25px 40px;
+  }
+  .menu-icon{
+    display: block;
+    width: 30px;
+    cursor: pointer;
+  }
+  .hide-mobile-menu{
+      /*making away from view port default (wehn oncliked menu iconn we change css)*/
+   right: -200px;
+  }
+  
 }

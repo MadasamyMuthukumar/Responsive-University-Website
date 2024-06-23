@@ -14,3 +14,17 @@
     width: 23%;
     border-radius: 10px;
 }
+
+/********** Media Qery **********/
+@media(max-width:800px){
+    .gallery{
+        /* allow only images if space available. otherwise push it to next row */
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .gallery img{
+        /* making image size 48% to make two image display in a row. two image take 48% remaing 2% will be gap */
+        width: 48%;
+        margin-bottom: 25px;
+    }
+}

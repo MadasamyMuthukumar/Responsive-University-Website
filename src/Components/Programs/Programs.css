@@ -48,3 +48,19 @@
     padding-top: 0;
   
 }
+
+/* *************Media Queries********** */
+@media(max-width:650px){
+    .programs{
+        /*will display vertically*/
+      flex-direction: column;
+    }
+    .program{
+        /*each program take 100% width*/
+        flex-basis: 100%;
+        /* margin: 15px; */
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+}

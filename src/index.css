@@ -41,3 +41,17 @@ a{
   background: #212EA0;
   color: #fff;
 }
+
+/********** Media queries ************/
+
+@media (max-width:1200px){
+  /*until 1200px we reducing the screen left and right padding*/
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /*reducing button width*/
+  .btn{
+    padding: 14px 22px;
+  }
+}

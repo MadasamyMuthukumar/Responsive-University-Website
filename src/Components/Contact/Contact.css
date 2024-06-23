@@ -1,0 +1,70 @@
+.contact{
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-col{
+    /*I need two col use 50%(same width) so i have named those two as contact-col*/
+    flex-basis: 48%; /*2% will be space between*/
+    color: #676767;
+}
+.contact-col h3{
+    color: #000F38;
+    font-weight: 500;
+    font-size: 25px;
+    /*to make message and icon verticlly align*/
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-col h3 img{
+    width: 35px;
+    margin-left: 10px;
+}
+.contact-col p{
+    max-width: 450px;
+    list-style: 0.3;
+}
+.contact-col ul li{
+    /*to dispaly icon and message vertically align*/
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.contact-col ul li img{
+    width: 20px;
+    margin-right: 10px;
+}
+.contact form input , .contact form textarea{
+    /*make like block element and display in individual line*/
+  display: block;
+  /*take 100% width of second column*/ 
+  width: 100%; 
+  background: #EBECFE;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  /*to make texarea not expandable*/
+  resize: none;
+}
+.contact-col span{
+    display: block;
+    margin: 20px 0;
+
+}
+
+/************ Media Query********** */
+@media(max-width:700px){
+    /* making block element to vertically display */
+    .contact{
+       display: block;
+       margin-top: 50px;
+    }
+    .contact-col{
+      padding: 20px;
+    }
+}
